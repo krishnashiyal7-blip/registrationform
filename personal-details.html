@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description" content="Add your contact information to your registration profile.">
+    <title>Personal details — Apply</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
+  </head>
+  <body data-page="personal">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Apply home"><span class="brand-mark" aria-hidden="true">a.</span><span>apply<span class="brand-period">.</span></span></a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="personal-details.html" aria-current="page">Your details</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+      </nav>
+      <span class="header-note"><span class="status-dot"></span> Draft saved automatically</span>
+    </header>
+    <main class="form-layout">
+      <aside class="form-sidebar">
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR APPLICATION</p>
+        <h1>Let’s start<br>with <span>you.</span></h1>
+        <p class="sidebar-description">First, the essentials. Add the best way to get in touch, and a little snapshot of who you are.</p>
+        <ol class="progress-list" aria-label="Application steps">
+          <li class="progress-item current" aria-current="step"><span>01</span><strong>Personal details</strong></li>
+          <li class="progress-item"><span>02</span><strong>Education</strong></li>
+          <li class="progress-item"><span>03</span><strong>Experience</strong></li>
+        </ol>
+        <div class="sidebar-note"><span aria-hidden="true">✳</span> You can come back and edit anything before submitting.</div>
+        <span class="sidebar-decoration" aria-hidden="true">01</span>
+      </aside>
+      <section class="form-panel" aria-labelledby="form-title">
+        <div class="panel-topline"><span>STEP 01 <span class="muted">/ 03</span></span><span class="required-note"><span aria-hidden="true">*</span> Required fields</span></div>
+        <div class="panel-heading">
+          <div><p class="eyebrow">THE BASICS</p><h2 id="form-title">Personal details</h2></div>
+          <span class="heading-mark" aria-hidden="true">01</span>
+        </div>
+        <p class="panel-description">How should we know you? These details help us put a name to your application.</p>
+        <form data-form="personal" novalidate>
+          <div class="field-grid">
+            <div class="field field-span">
+              <label for="fullName">Full name <span>*</span></label>
+              <input id="fullName" name="fullName" data-field required autocomplete="name" placeholder="e.g. Alex Morgan">
+              <small class="field-hint">Use the name you’d like us to call you.</small>
+            </div>
+            <div class="field">
+              <label for="email">Email address <span>*</span></label>
+              <input id="email" name="email" data-field required type="email" autocomplete="email" placeholder="you@example.com">
+            </div>
+            <div class="field">
+              <label for="phone">Phone number <span>*</span></label>
+              <input id="phone" name="phone" data-field required type="tel" autocomplete="tel" placeholder="+1 (555) 000-0000">
+            </div>
+            <div class="field field-span">
+              <label for="address">Address <span>*</span></label>
+              <textarea id="address" name="address" data-field required autocomplete="street-address" rows="2" placeholder="Street, city, and postal code"></textarea>
+            </div>
+            <div class="field field-span">
+              <span class="field-label">Profile photo <span class="optional">(optional)</span></span>
+              <div class="photo-control">
+                <label class="photo-upload" for="photo"><span class="upload-icon" aria-hidden="true">↑</span><span><strong>Choose a photo</strong><small>JPG, PNG or WebP · up to 2 MB</small></span><input id="photo" name="photo" type="file" accept="image/jpeg,image/png,image/webp"></label>
+                <div class="photo-preview" data-photo-preview hidden><img alt="Your selected profile photo" data-photo-image><button class="remove-photo" type="button" data-remove-photo aria-label="Remove profile photo">×</button></div>
+              </div>
+            </div>
+          </div>
+          <p class="form-message" data-form-message role="alert" hidden></p>
+          <div class="form-actions">
+            <a class="button button-secondary" href="index.html"><span aria-hidden="true">←</span> Home</a>
+            <button class="button button-primary" type="submit">Continue to education <span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer form-footer"><span>© 2025 Apply. Your story, your way.</span><span><span class="footer-lock" aria-hidden="true">◆</span> Your information is private</span></footer>
+    <p class="sr-only" id="storageNotice" role="status" aria-live="polite"></p>
+  </body>
+</html>

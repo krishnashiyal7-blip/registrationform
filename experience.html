@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description" content="Tell us about your experience and skills to complete your registration profile.">
+    <title>Experience — Apply</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
+  </head>
+  <body data-page="experience">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Apply home"><span class="brand-mark" aria-hidden="true">a.</span><span>apply<span class="brand-period">.</span></span></a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="personal-details.html">Your details</a>
+        <a href="education.html">Education</a>
+        <a class="active" href="experience.html" aria-current="page">Experience</a>
+      </nav>
+      <span class="header-note"><span class="status-dot"></span> Draft saved automatically</span>
+    </header>
+    <main class="form-layout">
+      <aside class="form-sidebar">
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR APPLICATION</p>
+        <h1>Good things<br>come from <span>experience.</span></h1>
+        <p class="sidebar-description">You’ve made it this far. Tell us what you’re good at, where you’ve worked, and what you’d like to bring next.</p>
+        <ol class="progress-list" aria-label="Application steps">
+          <li class="progress-item complete"><a href="personal-details.html"><span>01</span><strong>Personal details</strong></a></li>
+          <li class="progress-item complete"><a href="education.html"><span>02</span><strong>Education</strong></a></li>
+          <li class="progress-item current" aria-current="step"><span>03</span><strong>Experience</strong></li>
+        </ol>
+        <div class="sidebar-note"><span aria-hidden="true">✳</span> This is the final step. You’ve got this.</div>
+        <span class="sidebar-decoration" aria-hidden="true">03</span>
+      </aside>
+      <section class="form-panel" aria-labelledby="form-title">
+        <div class="panel-topline"><span>STEP 03 <span class="muted">/ 03</span></span><span class="required-note"><span aria-hidden="true">*</span> Required fields</span></div>
+        <div class="panel-heading">
+          <div><p class="eyebrow">THE GOOD STUFF</p><h2 id="form-title">Experience</h2></div>
+          <span class="heading-mark" aria-hidden="true">03</span>
+        </div>
+        <p class="panel-description">There’s no one-size-fits-all career path. Share the experience and skills that make you, you.</p>
+        <form data-form="experience" novalidate>
+          <div class="field-grid">
+            <div class="field field-span">
+              <label class="checkbox-card" for="isFresher">
+                <input id="isFresher" name="isFresher" data-field type="checkbox">
+                <span class="checkbox-visual" aria-hidden="true"></span>
+                <span><strong>I’m just starting out</strong><small>No previous work experience? That’s absolutely okay.</small></span>
+              </label>
+            </div>
+            <div class="field">
+              <label for="company">Company <span data-work-required>*</span></label>
+              <input id="company" name="company" data-field required autocomplete="organization" placeholder="Where you worked">
+            </div>
+            <div class="field">
+              <label for="jobRole">Job role <span data-work-required>*</span></label>
+              <input id="jobRole" name="jobRole" data-field required autocomplete="organization-title" placeholder="Your role or title">
+            </div>
+            <div class="field">
+              <label for="yearsExperience">Years of experience <span>*</span></label>
+              <input id="yearsExperience" name="yearsExperience" data-field required type="number" min="0" max="60" step="0.5" inputmode="decimal" placeholder="e.g. 2">
+            </div>
+            <div class="field field-span">
+              <label for="skills">Skills <span>*</span></label>
+              <textarea id="skills" name="skills" data-field required rows="3" placeholder="e.g. Project management, JavaScript, communication"></textarea>
+              <small class="field-hint">Separate skills with commas.</small>
+            </div>
+          </div>
+          <p class="form-message" data-form-message role="alert" hidden></p>
+          <div class="form-actions">
+            <a class="button button-secondary" href="education.html"><span aria-hidden="true">←</span> Previous</a>
+            <button class="button button-primary" type="submit">Submit application <span aria-hidden="true">↗</span></button>
+          </div>
+        </form>
+        <section class="success-panel" data-success-panel hidden aria-live="polite">
+          <span class="success-icon" aria-hidden="true">✓</span>
+          <p class="eyebrow">APPLICATION COMPLETE</p>
+          <h2>You’re all set<span class="brand-period">.</span></h2>
+          <p data-success-message>Your application has been saved in this browser. Thank you for sharing your story.</p>
+          <a class="button button-primary" href="index.html">Back to home <span aria-hidden="true">↗</span></a>
+        </section>
+      </section>
+    </main>
+    <footer class="site-footer form-footer"><span>© 2025 Apply. Your story, your way.</span><span><span class="footer-lock" aria-hidden="true">◆</span> Your information is private</span></footer>
+    <p class="sr-only" id="storageNotice" role="status" aria-live="polite"></p>
+  </body>
+</html>

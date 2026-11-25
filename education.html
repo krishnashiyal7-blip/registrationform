@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description" content="Add your school and college education to your registration profile.">
+    <title>Education — Apply</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
+  </head>
+  <body data-page="education">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Apply home"><span class="brand-mark" aria-hidden="true">a.</span><span>apply<span class="brand-period">.</span></span></a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="personal-details.html">Your details</a>
+        <a class="active" href="education.html" aria-current="page">Education</a>
+        <a href="experience.html">Experience</a>
+      </nav>
+      <span class="header-note"><span class="status-dot"></span> Draft saved automatically</span>
+    </header>
+    <main class="form-layout">
+      <aside class="form-sidebar">
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR APPLICATION</p>
+        <h1>Show us<br>what you’ve <span>learned.</span></h1>
+        <p class="sidebar-description">Every path is different. Tell us a little about your schooling and the knowledge you’ve picked up along the way.</p>
+        <ol class="progress-list" aria-label="Application steps">
+          <li class="progress-item complete"><a href="personal-details.html"><span>01</span><strong>Personal details</strong></a></li>
+          <li class="progress-item current" aria-current="step"><span>02</span><strong>Education</strong></li>
+          <li class="progress-item"><span>03</span><strong>Experience</strong></li>
+        </ol>
+        <div class="sidebar-note"><span aria-hidden="true">✳</span> A work in progress is still progress.</div>
+        <span class="sidebar-decoration" aria-hidden="true">02</span>
+      </aside>
+      <section class="form-panel" aria-labelledby="form-title">
+        <div class="panel-topline"><span>STEP 02 <span class="muted">/ 03</span></span><span class="required-note"><span aria-hidden="true">*</span> Required fields</span></div>
+        <div class="panel-heading">
+          <div><p class="eyebrow">YOUR BACKGROUND</p><h2 id="form-title">Education</h2></div>
+          <span class="heading-mark" aria-hidden="true">02</span>
+        </div>
+        <p class="panel-description">Share your academic journey. Add your latest result for each level.</p>
+        <form data-form="education" novalidate>
+          <div class="field-grid">
+            <div class="field field-span section-field">
+              <span class="section-number">01</span><span class="section-title">Secondary school <span>(10th)</span></span>
+            </div>
+            <div class="field">
+              <label for="tenthSchool">School name <span>*</span></label>
+              <input id="tenthSchool" name="tenthSchool" data-field required autocomplete="organization" placeholder="Your school">
+            </div>
+            <div class="field">
+              <label for="tenthPercentage">Percentage <span>*</span></label>
+              <div class="input-suffix"><input id="tenthPercentage" name="tenthPercentage" data-field required type="number" min="0" max="100" step="0.01" inputmode="decimal" placeholder="e.g. 85"><span>%</span></div>
+            </div>
+
+            <div class="field field-span section-field">
+              <span class="section-number">02</span><span class="section-title">Higher secondary <span>(12th)</span></span>
+            </div>
+            <div class="field">
+              <label for="twelfthSchool">School / college name <span>*</span></label>
+              <input id="twelfthSchool" name="twelfthSchool" data-field required autocomplete="organization" placeholder="Your school or college">
+            </div>
+            <div class="field">
+              <label for="twelfthPercentage">Percentage <span>*</span></label>
+              <div class="input-suffix"><input id="twelfthPercentage" name="twelfthPercentage" data-field required type="number" min="0" max="100" step="0.01" inputmode="decimal" placeholder="e.g. 85"><span>%</span></div>
+            </div>
+
+            <div class="field field-span section-field">
+              <span class="section-number">03</span><span class="section-title">Degree</span>
+            </div>
+            <div class="field">
+              <label for="degree">Degree / course <span>*</span></label>
+              <input id="degree" name="degree" data-field required placeholder="e.g. B.Sc. Computer Science">
+            </div>
+            <div class="field">
+              <label for="college">College / university <span>*</span></label>
+              <input id="college" name="college" data-field required autocomplete="organization" placeholder="Your college or university">
+            </div>
+            <div class="field">
+              <label for="degreePercentage">Percentage <span>*</span></label>
+              <div class="input-suffix"><input id="degreePercentage" name="degreePercentage" data-field required type="number" min="0" max="100" step="0.01" inputmode="decimal" placeholder="e.g. 85"><span>%</span></div>
+            </div>
+          </div>
+          <p class="form-message" data-form-message role="alert" hidden></p>
+          <div class="form-actions">
+            <a class="button button-secondary" href="personal-details.html"><span aria-hidden="true">←</span> Previous</a>
+            <button class="button button-primary" type="submit">Continue to experience <span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer form-footer"><span>© 2025 Apply. Your story, your way.</span><span><span class="footer-lock" aria-hidden="true">◆</span> Your information is private</span></footer>
+    <p class="sr-only" id="storageNotice" role="status" aria-live="polite"></p>
+  </body>
+</html>
